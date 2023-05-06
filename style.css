@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(203, 8, 203) 20%,rgb(4, 52, 227) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    border:1px solid rgb(7, 19, 255);
+    box-shadow: 0 0 10px rgb(209, 239, 255);
+    border-radius: 12px;
+
+    position: absolute;
+    left:400px;
+    top:120px;
+    margin:auto;
+
+    color:white;
+    width:40%;
+    height: 70%;
+}
+
+#heading{
+    text-align: center;
+    font-size:2.2rem;
+    padding:20px 30px 20px 30px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+#content{
+    display: flex;
+    flex-direction: coloumn;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+    margin-top: 20px;
+    padding:2.2rem;
+    font-size:1.5rem;
+}
+#changefrom{
+    flex-wrap: wrap;
+
+}
+#changeto{
+    flex-wrap: wrap;
+}
+#tofrom{
+    display: flex;
+    align-items: start;
+    margin-top: 35px;
+    
+}
+
+#change select{
+    width: 160px;
+    height: 130px;
+    font-size: 1.1rem;
+    padding: 0 5px 0 5px;
+    border: none;
+}
+.change{
+    width:230px;
+    height: 35px;
+    padding: 0px 13px;
+   border-radius: 10px;
+   font-size:1.1rem;
+}
+
+#changeValue{
+    display:flex;
+    gap:30px;
+    
+    justify-content:center ;
+    align-items: center;
+
+}
+#valueconvert{
+    position: absolute;
+    left:35px;
+    
+}
+
+#inputvalue{
+ font-size: 1.8rem;
+ border-radius: 10px;
+ border:1px solid blueviolet;
+ width: 220px;
+ height: 35px;
+ padding: 0 25px 0 25px;
+ margin: 32px 10px;
+ position: absolute;
+ left:30px;
+
+}
+
+#result{
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border:1px solid blueviolet;
+    width: 220px;
+    height: 36px;
+}
+button{
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    background-color: rgb(5, 5, 190);
+    border-radius: 1px rgb(23, 2, 30);
+    color: white;
+    box-shadow: 2px 4px 2px rgba(160, 3, 213, 0.6);
+}
+button:hover{
+background-color:rgb(243, 255, 8) ;
+color:rgb(0, 0, 0);
+transition: background-color 0.3s ease;
+}
+
+
+  @media only screen and (max-width: 500px) {
+    /* styles for screens less than 600px wide */
+    .container,#inputvalue, #result, #changefrom, #changeto,#result {
+      width: 75%;
+      margin-bottom: 10px;
+    }
+  }
